@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     locale: "en-US",
     // Set this to your final production domain when you deploy (Netlify/Vercel/custom domain).
     // During local dev and ngrok previews, Quartz still works fine with this placeholder.
-    baseUrl: "",
+    baseUrl: "https://builder-docs-cyan.vercel.app/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
