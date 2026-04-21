@@ -1,7 +1,7 @@
 {
   "buildCommand": "rm -rf node_modules package-lock.json && npm install && npm rebuild esbuild && npm run build",
   "outputDirectory": "public",
-  "rewrites": [
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/index.html"
