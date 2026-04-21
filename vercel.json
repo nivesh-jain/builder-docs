@@ -1,4 +1,10 @@
 {
-  "buildCommand": "rm -rf node_modules package-lock.json && npm install && npm rebuild esbuild && npm run build",
-  "outputDirectory": "public"
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "buildCommand": "npx quartz build",
+  "outputDirectory": "public",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
